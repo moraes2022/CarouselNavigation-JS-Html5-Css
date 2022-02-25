@@ -34,7 +34,7 @@ header ul li{
 }
 
 section.hero{
-    background-image: url(/img/city.jpg);
+    background-image: url('/public/img/city.jpg');
     height: 500px;
     background-size: cover
 }
