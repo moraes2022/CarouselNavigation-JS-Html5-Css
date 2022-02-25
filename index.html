@@ -4,40 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <title>Desenvolvimento Web com Grid de 12 Colunas - Aula Prática em HTML & CSS</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>slider</title>
 </head>
 <body>
-<header>
-    <div class="pagecontainer">
-        <img class="logo" src="./public/img/star-trek-logo.png" alt="">
-        <nav>
-            <ul>
-                <li><a target="blank" href="https://cineclick.uol.com.br/noticias/star-trek-entenda-cronologia-da-franquia-jornada-nas-estrelas">Chronology</a></li>
-                <li><a target="blank" href="https://intl.startrek.com/">Newsletter</a></li>
-                <a target="blank" href="https://olhardigital.com.br/2019/08/01/cinema-e-streaming/vezes-em-que-star-trek-previu-o-futuro/">Predicting the future</a>
-            </ul>
-        </nav>
+    <section>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                     <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/01.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-    </header>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/02.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
 
-    <section class="hero">
-        <div class="pagecontainer">
-        <div class="hero-content">
-            <h2>"A lógica é apenas o princípio da sabedoria, e não o seu fim" Spock</h2>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em 8 de setembro de 1966 era exibido o primeiro episódio de Jornada nas Estrelas (Star Trek), série de ficção científica criada por Gene Roddenberry que marcou época e tornou-se uma das mais cultuadas franquais da cultura pop de todos os tempos.</p>
-            <button>Saiba mais</button>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/03.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
 
-        </div>
-    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/04.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/05.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/06.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/07.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/08.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/09.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/10.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/11.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/public/img/12.png" alt="ANT-MAN">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </section>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-   
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop:true,
+            loopFillGroupWithBlank:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        })
+    </script>
+
 </body>
 </html>
