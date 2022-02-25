@@ -6,7 +6,7 @@ body{
     }
 
 header{
-    background-color: black;
+    background-color: #191970;
     color: white;
     height: 60px;
     }
@@ -27,10 +27,25 @@ header ul{
     list-style: none;
 }
 
-header ul li{
+header ul a{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
     display: inline-block;
     margin-left: 14px;
-    font-size: 18px;
+}
+
+header ul a:hover{
+   color: yellowgreen;
+   font-weight: bolder;
+   
+    
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 25px;
+    
 }
 
 section.hero{
